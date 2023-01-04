@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { render } from "@testing-library/react";
 import Export from "./Export.js"
 import FirstClass from "./FirstClass";
+import SecondClass from "./SecondClass";
 // class Demo{
 //   methodone()
 //   {
@@ -147,23 +148,26 @@ import FirstClass from "./FirstClass";
 // multiple components render pannikalam athu epadi nu pakkalam
 // function Rendercomponent(){
 //   root.render(
-//     <Sample name="Im a Front End Developer"/>
+//     <Second />
+    //     <Sample name="Im a Front End Developer"/>
     // main
-//   );
-//   }
+  // );
+  // }
 //   setInterval(Rendercomponent,1000);
 
 
-// const root=ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
+const root=ReactDOM.createRoot(document.getElementById('root'));
+root.render(
     // main
   // <Export content="values"/>
-// );
+  <FirstClass />
+  // <SecondClass />
+  );
 
 // ****************************************************************
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <FirstClass/>
-);
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <FirstClass name={' first class ku props valiya value pass panniruken'}/>
+// );
 // reportWebVitals();
