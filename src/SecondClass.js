@@ -4,17 +4,17 @@ import React, { Component } from 'react'
 
 export class SecondClass extends Component {
   render() {
-    // console.log("sec",this);
+    console.log("sec",this);
     return (
       <div>
         <h2>Multiple class component</h2>
         <p>Multiple class component-i render pandrathu ipadi pannikalam</p>
         <p>Intha file-i entha parent ku anupuromo antha intha child file-i parent ku tag mathiri pass pannanum</p>
         <h4>{this.props.val}</h4>
-
+        <div>SecondClass {this.props.name}</div>
+        <button onClick={()=> this.props.getData("child to parent intha valiya pass pannikalam")}>Click</button>
         {/* child la irunthu parent ku this.props moolama values pass pannikalam */}
         <button onClick={()=>this.props.getData("I'm velmurugan")}>click</button>
-        
       </div>
     )
   }

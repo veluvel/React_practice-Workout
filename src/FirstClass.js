@@ -1,4 +1,4 @@
-import React,{Component} from "react";
+import React from "react";
 import SecondClass from "./SecondClass";
 
 
@@ -6,7 +6,7 @@ import SecondClass from "./SecondClass";
 class FirstClass extends React.Component{
     
     getData = (param)=>{
-        console.log("param",param);
+        console.log("values-i ",param);
     }
 
     render(){
@@ -19,7 +19,9 @@ class FirstClass extends React.Component{
             <p>import pannitu tags mathiri call pannanum</p>
             <h4>{this.props.name}</h4>
             {/* this.key word use panni props valiya intha file oda parent la irunthu intha child ku values pass pannikalam */}
-            <SecondClass val={'another parent to child method valiya pass panniruken'} getData={this.getData} />
+            {/* <SecondClass val={'another parent to child method valiya pass panniruken'} /> */}
+            <SecondClass getData={this.getData} />
+    
             
             </div>
     }

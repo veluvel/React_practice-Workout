@@ -7,6 +7,7 @@ import { render } from "@testing-library/react";
 import Export from "./Export.js"
 import FirstClass from "./FirstClass";
 import SecondClass from "./SecondClass";
+import Lifecycle from "./Lifecycle";
 // class Demo{
 //   methodone()
 //   {
@@ -160,8 +161,9 @@ const root=ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     // main
   // <Export content="values"/>
-  <FirstClass />
+  // <FirstClass />
   // <SecondClass />
+  <Lifecycle />
   );
 
 // ****************************************************************

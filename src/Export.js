@@ -25,4 +25,4 @@ function Valuepass(Props) {
   )
 }
 
-export default Valuepass
+export default Valuepass;
